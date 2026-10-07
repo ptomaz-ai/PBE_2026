@@ -1,0 +1,43 @@
+<?php
+
+class Pedido{
+    public $Número;
+    public $Cliente;
+    public $Valor;
+    public $Status;
+
+    function adicionar($valor){
+        if($this->valor == "Argardando";){
+            $this->Valor = $this->saldo + $valor;
+        }else{
+            echo "Não é possivel adicionar item.
+                o pedido está $this->Status <br>";
+        }
+    }
+    function Cancelar(){
+        $this->Status = "Cancelando";
+        echo "Status alterando para $this->Status <br>";
+
+    }
+    function Finalizar(){
+        $this->Status = "Finalizar";
+        echo "Status alterado para $this->numero <br>";
+        echo "Status alterado para $this->Cliente <br>";
+        echo "Status alterado para $this->Valor <br>";
+        echo "Status alterado para $this->Status <br>";
+    }
+}
+$Pedido = new Pedido();
+$Pedido->Número = 100;
+$Pedido->Cliente = "Leonardo";
+$Pedido->Valor = 0;
+$Pedido->Status = "agardando";
+
+$Pedido->exibirResumo();
+echo "<hr>"
+$Pedido->adicionar(50);
+$Pedido->adicionar(22);
+$Pedido->adicionar();
+echo "<hr>"
+$Pedido->Finalizar();
+$Pedido->exibirResumo();
