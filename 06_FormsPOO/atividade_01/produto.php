@@ -21,4 +21,22 @@ class Produto{
     public function calculoTotal(){
         return $this->preco + $this->quantidade;
     }
+    public function carcularDesconto(){
+        if($this->quantidade >= 10){
+            return $this->calculoTotal() * 0.10;
+        }else{
+            return 0;
+        }
+    }
+    public function calcularTotalComDesconto(){
+        return $this->calculoTotal() - $this->;carcularDesconto();
+    }
+    public function verificarEstoque(){
+        if($this->quantidade < 5;){
+            return "Estoque baixo";
+        }
+        return "estoque nolmal";
+    }
+
 }
+?>
