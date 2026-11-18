@@ -2,7 +2,7 @@
 
 class Matricula {
 
-    private $aluno;
+    private $aluno;  
     private $plano;
     private $meses;
     private $modalidades;
@@ -18,7 +18,7 @@ class Matricula {
         return $this->aluno;
     }
 
-    public function getPlano() {
+    public function getPlano() { 
         return $this->plano;
     }
 
@@ -47,7 +47,7 @@ class Matricula {
         if ($modalidade == "Natação") {
             return 60;
         } elseif ($modalidade == "Funcional") {
-            return 40;
+            return 40;                             
         } elseif ($modalidade == "Lutas") {
             return 50;
         }
@@ -72,7 +72,7 @@ class Matricula {
             return 20;
         } elseif ($this->meses >= 6) {
             return 10;
-        } else {
+        } else {          
             return 0;
         }
 

@@ -9,7 +9,7 @@ class Aluno {
     public function __construct($nome, $peso, $altura) {
         $this->nome = $nome;
         $this->peso = $peso;
-        $this->altura = $altura;
+        $this->altura = $altura; 
     }
 
     public function getNome() {

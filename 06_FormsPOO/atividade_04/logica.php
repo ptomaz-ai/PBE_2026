@@ -9,9 +9,11 @@ $altura = $_POST['altura'];
 $plano = $_POST['plano'];
 $meses = $_POST['meses'];
 $modalidades = [];
+// se campo não exitir assumir o valor de 0 // 
 
 if (isset($_POST['modalidades'])) {
     $modalidades = $_POST['modalidades'];
+// -> ?? faz com que se a lista/arry não existir, cria uma vazia //
 }
 
 $aluno = new Aluno($nome, $peso, $altura);

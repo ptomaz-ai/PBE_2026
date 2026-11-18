@@ -46,7 +46,7 @@
                 <td>
                     R$ <?= number_format($matricula->calcularValorModalidade($modalidade), 2, ',', '.') ?>
                 </td>
-            </tr>
+            </tr>      
 
         <?php endforeach; ?>
 
@@ -89,7 +89,6 @@
     <?php endif ?>
     <br>
 
-    <a href="view.php">Cadastrar outra matrícula</a>
 
 </body>
 </html>
